@@ -1,0 +1,42 @@
+{
+  "name": "beautiful.css",
+  "version": "1.0.0",
+  "description": "Beautifull Css website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --env=mode=development",
+    "prod": "webpack --env=mode=production",
+    "serve": "firebase serve -p 5050",
+    "deploy": "npm run prod && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/btfcss/beautiful.css.git"
+  },
+  "keywords": [
+    "Css",
+    "design"
+  ],
+  "author": "Beautiful CSS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btfcss/beautiful.css/issues"
+  },
+  "homepage": "https://github.com/btfcss/beautiful.css#readme",
+  "volta": {
+    "node": "20.12.1",
+    "npm": "10.5.1"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.0.0",
+    "firebase": "^10.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
