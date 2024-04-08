@@ -10,9 +10,8 @@ Black #000
 */
 
 * {
-  background-color: #111;
+ /* background-color: #222; */
 }
-
 .btn {
   color: #fff;
   background-color: #2977f5;
@@ -24,7 +23,7 @@ Black #000
   font-weight: 600;
   border: 0;
   outline: 0;
-  font-size: 0.875;
+  font-size: 0.875em;
 }
 
 .btn-dark,
@@ -54,8 +53,16 @@ Black #000
   background-color: #ff3131;
 }
 
+.btn-white, 
+.btn-light {
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  color: #000;
+  outline: 1px solid #ccc;
+}
+
 .btn:not(:disabled):hover {
-  background-color: #0b60ea;
+  background-color: #5a96f7;
 }
 
 
@@ -68,21 +75,26 @@ Black #000
 .btn-red:not(:disabled):hover,
 .btn-danger:not(:disabled):hover,
 .btn-error:not(:disabled):hover {
-  background-color: #cc0000;
+  background-color: #ff6464;
 }
 
 .btn-green:not(:disabled):hover,
 .btn-success:not(:disabled):hover {
-  background-color: #4ca626;
+  background-color: #70d445;
 }
 
 .btn-purple:not(:disabled):hover {
-  background-color: #7a2cd8;
+  background-color: #a36de4;
 }
 
 .btn-orange:not(:disabled):hover,
 .btn-warning:not(:disabled):hover {
-  background-color: #db6f00;
+  background-color: #ff9529;
+}
+
+.btn-white:not(:disabled):hover,
+.btn-light:not(:disabled):hover {
+  background-color: #e8e8e8;
 }
 
 
@@ -125,6 +137,13 @@ Black #000
   cursor: auto; 
 }
 
+.btn-white:disabled,
+.btn-light:disabled {
+  background-color: #ddd;
+  color: #fff;
+  outline: 0;
+  cursor: auto; 
+}
 
 .btn-round {
   border-radius: 100vh;
@@ -133,11 +152,12 @@ Black #000
 
 .btn.btn-xs {
   padding: 0.25rem 0.5rem;
-  font-size: 0.75em;
+  font-size: 0.7rem;
 }
 
 .btn.btn-sm {
-  padding: 0.25rem 0.5rem;  
+  padding: 0.3rem 0.5rem;  
+  font-size: 0.8rem;
 }
 
 .btn.btn-md {
@@ -146,8 +166,10 @@ Black #000
 
 .btn.btn-lg {
   padding: 0.5rem 0.75rem;  
+  font-size: 1rem;
 }
 
 .btn.btn-xl {
   padding: 0.625rem 0.875rem;  
+  font-size: 1.25rem;
 }
