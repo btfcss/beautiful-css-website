@@ -1,6 +1,6 @@
 import "Js/button/button.js"
 
-import 'beautiful-css'
+//import 'beautiful-css'
 
 //console.log (helloNpm)
 
